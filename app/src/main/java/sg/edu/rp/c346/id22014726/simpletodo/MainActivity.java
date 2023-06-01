@@ -39,12 +39,11 @@ public class MainActivity extends AppCompatActivity {
         btnClear = findViewById(R.id.btnClear);
         btnDelete = findViewById(R.id.btnDelete);
         lvToDo = findViewById(R.id.lvTasks);
-        spinnerChoice = findViewById(R.id.spinnerChoice);
+        spinnerChoice = findViewById(R.id.spinner);
 
         aaToDo = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, alToDo);
 
         lvToDo.setAdapter(aaToDo);
-        spinnerChoice.setAdapter(aaToDo);
 
         spinnerChoice.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
